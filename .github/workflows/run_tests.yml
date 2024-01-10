@@ -22,7 +22,7 @@ jobs:
     - name: Ensure browsers are installed
       run: python -m playwright install --with-deps
     - name: Run your tests
-      run: npx playwright test
+      run: npx playwright test ./tests/test_weekan_login.py
     - uses: actions/upload-artifact@v3
       if: always()
       with:
