@@ -18,13 +18,12 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        npm install playwright@1.40.1
     - name: Ensure browsers are installed
       run: python -m playwright install --with-deps
     - name: Run your tests
-      run: npx playwright test ./tests/test_weekan_login.py
+      run: pytest --tracing=retain-on-failure
     - uses: actions/upload-artifact@v3
       if: always()
       with:
         name: playwright-traces
-        path: tests/
+        path: test-results/
