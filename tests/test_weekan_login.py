@@ -1,6 +1,5 @@
 #Тест логина
 from playwright.sync_api import sync_playwright
-import pytest
 import time
 import datetime
 now = datetime.datetime.now()
