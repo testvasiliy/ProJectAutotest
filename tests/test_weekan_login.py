@@ -6,7 +6,7 @@ import datetime
 now = datetime.datetime.now()
 def test_title(page: Page):
     page.goto("https://pr-cy.ru/news/p/6391-znachenie-meta-tegov-na-stranitsakh-sayta")
-    assert page.title() == "Метатеги страниц сайта: title, description, keywords, robots и другие – PR-CY Блог"
+    assert page.title() == "Метатеги страиц сайта: title, description, keywords, robots и другие – PR-CY Блог"
 # with sync_playwright() as p:
 #     browser = p.chromium.launch(headless=True)
 #     try:
