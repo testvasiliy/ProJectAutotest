@@ -13,8 +13,6 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 20 
-      
-   
     - name: Playwright install
       run: pip install playwright
     - name: Pytest-playwright install
