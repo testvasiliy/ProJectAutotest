@@ -13,10 +13,7 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 20 
-    - name: Install dependencies
-      run: yarn install
-    - name: ci
-      run: yarn ci   
+      
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
