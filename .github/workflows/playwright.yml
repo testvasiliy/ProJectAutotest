@@ -15,8 +15,10 @@ jobs:
         node-version: 20 
       
    
-    - name: Playwright inst
+    - name: Playwright install
       run: pip install playwright
+    - name: Pytest-playwright install
+      run: pip install pytest-playwright
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
