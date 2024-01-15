@@ -13,7 +13,10 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 18
-    
+    - name: npm install                                                               
+      run: npm install
+    - name: npx playwright install
+      run: npx playwright install    
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
