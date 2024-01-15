@@ -10,7 +10,7 @@ with sync_playwright() as p:
         delay = 10
         url = "http://185.22.63.39/sign-in"
         page.goto(url)
-        page.locator('//*[@id="at-field-username_and_email"]').fill('testadmin') #Ввод юзернейма
+        page.locator('//*[@id="at-field-username_and_email"]').fill('testtadmin') #Ввод юзернейма
         page.locator('//*[@id="at-field-password"]').fill('123123123') #Ввод пароля
         time.sleep(1)
         page.locator('//*[@id="at-btn"]').click()#Клик по кнопке Sign In
