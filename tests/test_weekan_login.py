@@ -6,7 +6,7 @@ import datetime
 now = datetime.datetime.now()
 def test_title(page: Page):
     page.goto("http://185.22.63.39/sign-in")
-    page.locator('//*[@id="at-field-username_and_email"]').fill('testadmin') #Ввод юзернейма
+    page.locator('//*[@id="at-field-username_and_email"]').fill('testееadmin') #Ввод юзернейма
     page.locator('//*[@id="at-field-password"]').fill('123123123') #Ввод пароля
     time.sleep(1)
     page.locator('//*[@id="at-btn"]').click()#Клик по кнопке Sign In
